@@ -1,34 +1,235 @@
 <!doctype html>
-<html lang="es-AR">
+<html lang="es-AR" class="no-js">
 <head>
-  <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- SEO / OG: el JS los completa desde data.js. Para la web FINAL, copiá acá los textos reales
-     (WhatsApp y Facebook leen estos valores sin ejecutar JS para la vista previa del link). -->
-<title>Negocio | Sitio web</title>
-<meta name="description" content="">
-<meta property="og:type" content="website">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0ea5e9">
+<title>SiuVet 24 | Veterinaria de urgencias 24 horas en Resistencia, Chaco</title>
+<meta name="description" content="Clínica veterinaria abierta las 24 horas en Arturo Illia 1274, Resistencia. Urgencias, internación y cirugías. Escribinos por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E3B3A">
+<meta property="og:title" content="SiuVet 24 | Urgencias veterinarias 24 hs">
+<meta property="og:description" content="Urgencias veterinarias las 24 horas, todos los días, en Resistencia.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?w=1200&q=70&auto=format&fit=crop">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<!-- Datos del negocio. Para probar otro archivo sin renombrar: index.html?data=data-ejemplo-restaurante -->
-<script>
-  (function () {
-    var p = new URLSearchParams(location.search).get("data");
-    var file = (p && /^[a-z0-9_-]+$/i.test(p)) ? p + ".js" : "data.js";
-    document.write('<script src="' + file + '"><\/script>');
-  })();
-</script>
 </head>
 <body>
-  <div id="app"></div>
-  <noscript><p style="padding:24px;font-family:sans-serif">Activá JavaScript para ver este sitio.</p></noscript>
-  <script src="app.js"></script>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div class="proposal">Propuesta de diseño para <strong>Clínica Veterinaria SiuVet 24</strong> — preparada por Javier Ruiz Díaz</div>
+
+<header class="top" id="top">
+  <div class="alert">
+    <div class="alert__in">
+      <p class="alert__txt"><span class="dot" aria-hidden="true"></span><strong>Urgencias 24 hs</strong><span class="alert__more"> · Abierto ahora, todos los días</span></p>
+      <a class="alert__btn" href="https://wa.me/5493625426356?text=Hola!%20Tengo%20una%20urgencia%20con%20mi%20mascota." target="_blank" rel="noopener">Escribinos ahora <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <div class="nav">
+    <a class="brand" href="#top" aria-label="SiuVet 24, inicio">
+      <span class="brand__mark" aria-hidden="true">24</span>
+      <span class="brand__name">SiuVet<small>Clínica veterinaria</small></span>
+    </a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="menu"><span class="sr">Abrir menú</span><i></i><i></i></button>
+    <nav class="nav__menu" id="menu" aria-label="Principal">
+      <a href="#urgencia">¿Es una urgencia?</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#llegar">Cómo llegar</a>
+      <a href="#opiniones">Opiniones</a>
+      <a class="nav__tel" href="tel:+543625426356">0362 542-6356</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="kicker">Clínica veterinaria · Arturo Illia 1274 · Resistencia</p>
+        <h1 class="hero__title">Urgencias<br>veterinarias<br><span class="lime">las 24 horas</span></h1>
+        <p class="hero__lead">De día, de noche o de madrugada: si tu mascota tiene una urgencia, nuestra guardia está abierta.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--lime" href="https://wa.me/5493625426356?text=Hola!%20Tengo%20una%20urgencia%20con%20mi%20mascota." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Escribinos ahora</a>
+          <a class="btn btn--ghost" href="tel:+543625426356"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-tel"/></svg>Llamar</a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <figure class="hero__photo">
+          <img src="https://images.unsplash.com/photo-1599443015574-be5fe8a05783?w=1200&q=70&auto=format&fit=crop" alt="Perro pug negro con collar isabelino después de una atención veterinaria" width="1200" height="1500" fetchpriority="high">
+        </figure>
+        <div class="clock" role="group" aria-label="Estado de la guardia">
+          <p class="clock__state"><span class="dot" aria-hidden="true"></span>Abierto ahora</p>
+          <p class="clock__time" aria-hidden="true"><span id="hh">--</span><b>:</b><span id="mm">--</span></p>
+          <p class="clock__sub">Hora en Resistencia · <strong>24/7</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <div class="strip__photos">
+        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&q=70&auto=format&fit=crop" alt="Bulldog francés con buzo amarillo de espaldas" loading="lazy" width="600" height="600">
+        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&q=70&auto=format&fit=crop" alt="Gato atigrado mirando hacia arriba" loading="lazy" width="600" height="600">
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=70&auto=format&fit=crop" alt="Perro pastor australiano sonriendo al aire libre" loading="lazy" width="600" height="600">
+      </div>
+      <dl class="strip__hours">
+        <dt>Horario de atención</dt>
+        <dd><span>Lunes a domingo</span><strong>00:00 — 24:00</strong></dd>
+        <dd><span>Noches y madrugadas</span><strong>Guardia abierta</strong></dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- TRIAGE -->
+  <section class="triage" id="urgencia">
+    <div class="wrap">
+      <div class="triage__head reveal">
+        <p class="label">Antes de salir</p>
+        <h2 class="triage__title">¿Es una<br>urgencia?</h2>
+        <p class="triage__lead">Si ves alguna de estas señales, no esperes a mañana. Tocá la que corresponda y nos escribís directo por WhatsApp.</p>
+      </div>
+      <ol class="signs">
+        <li class="reveal"><a href="https://wa.me/5493625426356?text=Hola%20SiuVet!%20Tengo%20una%20urgencia%3A%20a%20mi%20mascota%20le%20cuesta%20respirar." target="_blank" rel="noopener"><span class="signs__n">01</span><span class="signs__t">Le cuesta respirar</span><span class="signs__go">Escribir <span aria-hidden="true">→</span></span></a></li>
+        <li class="reveal"><a href="https://wa.me/5493625426356?text=Hola%20SiuVet!%20Tengo%20una%20urgencia%3A%20mi%20mascota%20tuvo%20un%20accidente%20o%20un%20golpe." target="_blank" rel="noopener"><span class="signs__n">02</span><span class="signs__t">Tuvo un accidente, un golpe o una herida</span><span class="signs__go">Escribir <span aria-hidden="true">→</span></span></a></li>
+        <li class="reveal"><a href="https://wa.me/5493625426356?text=Hola%20SiuVet!%20Tengo%20una%20urgencia%3A%20mi%20mascota%20comi%C3%B3%20o%20tom%C3%B3%20algo%20que%20no%20deb%C3%ADa." target="_blank" rel="noopener"><span class="signs__n">03</span><span class="signs__t">Comió o tomó algo que no debía</span><span class="signs__go">Escribir <span aria-hidden="true">→</span></span></a></li>
+        <li class="reveal"><a href="https://wa.me/5493625426356?text=Hola%20SiuVet!%20Mi%20mascota%20est%C3%A1%20muy%20decaída%20o%20no%20se%20levanta." target="_blank" rel="noopener"><span class="signs__n">04</span><span class="signs__t">Está muy decaída o no se levanta</span><span class="signs__go">Escribir <span aria-hidden="true">→</span></span></a></li>
+      </ol>
+      <p class="triage__note">Esta lista es orientativa y no reemplaza la evaluación de un veterinario. Ante cualquier duda, escribinos o vení directo a la clínica.</p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <div class="services__head reveal">
+        <p class="label label--lime">Servicios</p>
+        <h2 class="h2">Una guardia que <span class="lime">nunca cierra</span></h2>
+        <p>Cuando algo no anda bien, no hace falta esperar a mañana.</p>
+      </div>
+      <div class="bento">
+        <article class="tile tile--lime reveal">
+          <p class="tile__big" aria-hidden="true">24/7</p>
+          <h3>Guardia 24 hs</h3>
+          <p>Abierto las 24 horas: atendemos urgencias de día, de noche y de madrugada.</p>
+        </article>
+        <article class="tile reveal">
+          <svg class="tile__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
+          <h3>Urgencias y emergencias</h3>
+          <p>Atención inmediata para perros y gatos cuando cada minuto cuenta.</p>
+        </article>
+        <article class="tile tile--photo reveal">
+          <img src="https://images.unsplash.com/photo-1553688738-a278b9f063e0?w=900&q=70&auto=format&fit=crop" alt="Perro descansando sobre una manta en un box de internación" loading="lazy" width="900" height="600">
+          <div class="tile__over">
+            <h3>Internación</h3>
+            <p>Seguimiento de pacientes que necesitan quedarse en observación.</p>
+          </div>
+        </article>
+        <article class="tile reveal">
+          <svg class="tile__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Cirugías</h3>
+          <p>Intervenciones quirúrgicas en la clínica.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO LLEGAR -->
+  <section class="route" id="llegar">
+    <div class="wrap route__grid">
+      <div class="reveal">
+        <p class="label">Si es una emergencia</p>
+        <h2 class="h2 h2--dark">Vení directo.<br>Te esperamos.</h2>
+        <ol class="steps">
+          <li><span>1</span><div><strong>Llamanos mientras vas en camino</strong><a href="tel:+543625426356">0362 542-6356</a></div></li>
+          <li><span>2</span><div><strong>Vení a la clínica</strong>Arturo Illia 1274, Resistencia, Chaco</div></li>
+          <li><span>3</span><div><strong>La guardia está abierta</strong>Las 24 horas, todos los días</div></li>
+        </ol>
+        <a class="btn btn--dark" href="https://www.google.com/maps/dir/?api=1&amp;destination=Arturo%20Illia%201274%2C%20Resistencia%2C%20Chaco" target="_blank" rel="noopener">Cómo llegar con Google Maps <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="map reveal">
+        <iframe title="Mapa de Clínica Veterinaria SiuVet 24, Arturo Illia 1274, Resistencia" src="https://maps.google.com/maps?q=Cl%C3%ADnica%20Veterinaria%20SiuVet%2024%2C%20Arturo%20Illia%201274%2C%20Resistencia%2C%20Chaco&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIONES -->
+  <section class="voices" id="opiniones">
+    <div class="wrap">
+      <div class="voices__head reveal">
+        <p class="voices__num">+1.100</p>
+        <p class="voices__cap">personas ya nos dejaron su opinión en Google.<br>Estamos para cuando más lo necesitás, a cualquier hora.</p>
+      </div>
+      <div class="voices__grid">
+        <figure class="voice reveal">
+          <blockquote>“Fui por una urgencia con mi perro y le salvaron la vida... Eternamente agradecida con los doctores que estuvieron con él. Yo los recomiendo!”</blockquote>
+          <figcaption>Soledad S. · Google</figcaption>
+        </figure>
+        <figure class="voice reveal">
+          <blockquote>“Muy lindo lugar. Muy amable las personas. Saben trabajar y saben tranquilizar a los dueños. Atención rápida. Excelente!!!”</blockquote>
+          <figcaption>Fabián R. · Google</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="wrap faq__grid">
+      <h2 class="h2 h2--dark reveal">Preguntas<br>rápidas</h2>
+      <div class="faq__list reveal">
+        <details>
+          <summary>¿Atienden de noche y los fines de semana?</summary>
+          <p>Sí. La clínica está abierta las 24 horas, todos los días.</p>
+        </details>
+        <details>
+          <summary>¿Qué hago si es una emergencia?</summary>
+          <p>Vení directo a Arturo Illia 1274 o llamanos al <a href="tel:+543625426356">0362 542-6356</a> mientras vas en camino.</p>
+        </details>
+        <details>
+          <summary>¿Dónde están?</summary>
+          <p>En Arturo Illia 1274, Resistencia, Chaco.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="final">
+    <div class="wrap final__in reveal">
+      <h2>¿Urgencia con<br>tu mascota?</h2>
+      <div>
+        <p>Estamos abiertos ahora mismo. Escribinos o vení directo a la clínica.</p>
+        <div class="final__ctas">
+          <a class="btn btn--dark" href="https://wa.me/5493625426356?text=Hola!%20Tengo%20una%20urgencia%20con%20mi%20mascota." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Escribir por WhatsApp</a>
+          <a class="btn btn--line" href="tel:+543625426356"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-tel"/></svg>0362 542-6356</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="foot__brand">SiuVet <span>24</span></p>
+    <p>Clínica Veterinaria · Arturo Illia 1274, Resistencia, Chaco · <a href="tel:+543625426356">0362 542-6356</a></p>
+    <p class="foot__small">Fotos de stock (Unsplash), no son de la clínica. Opiniones textuales de Google Maps.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5493625426356?text=Hola%20SiuVet!%20Quiero%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a SiuVet 24">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
+</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></symbol>
+</svg>
+
+<script src="script.js" defer></script>
 </body>
 </html>

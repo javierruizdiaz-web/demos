@@ -1,34 +1,253 @@
 <!doctype html>
 <html lang="es-AR">
 <head>
-  <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- SEO / OG: el JS los completa desde data.js. Para la web FINAL, copiá acá los textos reales
-     (WhatsApp y Facebook leen estos valores sin ejecutar JS para la vista previa del link). -->
-<title>Negocio | Sitio web</title>
-<meta name="description" content="">
+<title>Espacio Salud y Estética | Spa, estética y gimnasio en Resistencia, Chaco</title>
+<meta name="description" content="Masajes, estética facial y corporal, depilación definitiva Soprano ICE, pilates y gimnasio en Salta 364, Resistencia. Turnos por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0ea5e9">
+<meta property="og:title" content="Espacio Salud y Estética | Resistencia, Chaco">
+<meta property="og:description" content="Spa, estética, depilación definitiva Soprano ICE, pilates y gimnasio en Salta 364, Resistencia.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&q=70&auto=format&fit=crop">
+<meta name="theme-color" content="#2E2A24">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1800&q=70&auto=format&fit=crop">
 <link rel="stylesheet" href="styles.css">
-<!-- Datos del negocio. Para probar otro archivo sin renombrar: index.html?data=data-ejemplo-restaurante -->
-<script>
-  (function () {
-    var p = new URLSearchParams(location.search).get("data");
-    var file = (p && /^[a-z0-9_-]+$/i.test(p)) ? p + ".js" : "data.js";
-    document.write('<script src="' + file + '"><\/script>');
-  })();
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"DaySpa","name":"Espacio Salud y Estética","telephone":"+54 9 362 480-1373","address":{"@type":"PostalAddress","streetAddress":"Salta 364","addressLocality":"Resistencia","addressRegion":"Chaco","addressCountry":"AR"},"openingHours":["Mo-Fr 09:00-20:00","Sa 09:00-13:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"117"}}
 </script>
 </head>
 <body>
-  <div id="app"></div>
-  <noscript><p style="padding:24px;font-family:sans-serif">Activá JavaScript para ver este sitio.</p></noscript>
-  <script src="app.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div class="proposal">Propuesta de diseño para Espacio Salud y Estética — preparada por Javier Ruiz Díaz</div>
+
+<header class="header" id="top">
+  <div class="header__in">
+    <nav class="nav nav--l" aria-label="Secciones">
+      <a href="#mundos">Servicios</a>
+      <a href="#resenas">Reseñas</a>
+    </nav>
+    <a href="#top" class="logo" aria-label="Espacio Salud y Estética, inicio">
+      <span class="logo__m">Espacio</span>
+      <span class="logo__s">salud &amp; estética</span>
+    </a>
+    <nav class="nav nav--r" aria-label="Contacto">
+      <a href="#visita">Visitanos</a>
+      <a class="nav__cta wa" href="https://wa.me/5493624801373" data-msg="¡Hola! Quisiera agendar un turno para..." target="_blank" rel="noopener">Agendar turno</a>
+    </nav>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mnav" aria-label="Abrir menú"><span></span><span></span></button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Menú">
+    <a href="#mundos">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#resenas">Reseñas</a>
+    <a href="#visita">Horarios y ubicación</a>
+    <a class="mnav__cta wa" href="https://wa.me/5493624801373" data-msg="¡Hola! Quisiera agendar un turno para..." target="_blank" rel="noopener">Agendar por WhatsApp</a>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero__bg" src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1800&q=70&auto=format&fit=crop" alt="Masaje con aceites en un ambiente de spa en penumbra" width="1800" height="1200" fetchpriority="high">
+    <div class="hero__veil" aria-hidden="true"></div>
+    <div class="hero__in">
+      <p class="hero__kicker">Salta 364 · Resistencia</p>
+      <h1 class="hero__t">Todo para tu bienestar, <em>en un solo lugar</em></h1>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="hero__lead">Masajes, estética facial y corporal, depilación definitiva con láser Soprano ICE, pilates y gimnasio en pleno centro.</p>
+      <div class="hero__actions">
+        <a class="btn btn--gold wa" href="https://wa.me/5493624801373" data-msg="¡Hola! Quisiera agendar un turno para..." target="_blank" rel="noopener">Agendá tu turno</a>
+        <a class="btn btn--ghost" href="#mundos">Descubrir los servicios</a>
+      </div>
+    </div>
+    <ul class="hero__worlds" aria-label="Tres mundos">
+      <li>Spa</li><li>Estética</li><li>Movimiento</li>
+    </ul>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro" id="nosotros">
+    <div class="wrap">
+      <p class="eyebrow rv">Un clásico del bienestar en Resistencia</p>
+      <p class="intro__t rv">Reunimos spa, estética y actividad física para que no tengas que ir de un lugar a otro: <em>venís a entrenar, te hacés un masaje o tu sesión de depilación,</em> todo en el mismo espacio.</p>
+      <ul class="stats">
+        <li class="rv"><strong>4,7 <span aria-hidden="true">★</span></strong><span>117 opiniones en Google</span></li>
+        <li class="rv"><strong>Lun a sáb</strong><span>turnos por WhatsApp</span></li>
+        <li class="rv"><strong>3 mundos</strong><span>bajo el mismo techo</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MUNDOS -->
+  <section class="worlds" id="mundos" aria-labelledby="mundos-t">
+    <div class="wrap">
+      <div class="worlds__head rv">
+        <p class="eyebrow">Servicios</p>
+        <h2 class="h2" id="mundos-t">Cuidarte nunca fue <em>tan simple</em></h2>
+      </div>
+
+      <article class="world rv">
+        <div class="world__media">
+          <img class="world__img" src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=1000&q=70&auto=format&fit=crop" alt="Masajista trabajando sobre la espalda de una clienta" loading="lazy" width="1000" height="1500">
+          <img class="world__inset" src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&q=70&auto=format&fit=crop" alt="Piedras calientes sobre la espalda junto a flores blancas" loading="lazy" width="600" height="400">
+        </div>
+        <div class="world__copy">
+          <span class="world__n" aria-hidden="true">I</span>
+          <h3 class="world__t">Spa <em>y masajes</em></h3>
+          <p>Masajes relajantes y descontracturantes para soltar tensiones y desconectar. Una pausa real en medio de la semana.</p>
+          <ul class="world__list">
+            <li>Masajes relajantes</li>
+            <li>Masajes descontracturantes</li>
+          </ul>
+          <a class="link wa" href="https://wa.me/5493624801373" data-msg="¡Hola! Quisiera agendar un masaje." target="_blank" rel="noopener">Reservar un masaje <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="world world--rev rv">
+        <div class="world__media">
+          <img class="world__img" src="https://images.unsplash.com/photo-1552693673-1bf958298935?w=1000&q=70&auto=format&fit=crop" alt="Tratamiento facial con aparatología en camilla" loading="lazy" width="1000" height="667">
+          <img class="world__inset" src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=70&auto=format&fit=crop" alt="Aplicación de máscara facial con pincel" loading="lazy" width="600" height="400">
+        </div>
+        <div class="world__copy">
+          <span class="world__n" aria-hidden="true">II</span>
+          <h3 class="world__t">Estética <em>y láser</em></h3>
+          <p>Tratamientos para tu piel y tu cuerpo, con aparatología y la tecnología del láser Soprano ICE para una piel suave por mucho más tiempo.</p>
+          <ul class="world__list">
+            <li>Estética facial: limpiar, hidratar y renovar</li>
+            <li>Estética corporal y crioradiofrecuencia</li>
+            <li>Depilación definitiva con Soprano ICE</li>
+          </ul>
+          <a class="link wa" href="https://wa.me/5493624801373" data-msg="¡Hola! Quisiera consultar por estética y depilación definitiva." target="_blank" rel="noopener">Consultar por estética <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <article class="world rv">
+        <div class="world__media">
+          <img class="world__img" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1000&q=70&auto=format&fit=crop" alt="Grupo de mujeres entrenando sobre colchonetas" loading="lazy" width="1000" height="667">
+          <img class="world__inset" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=70&auto=format&fit=crop" alt="Mujer haciendo ejercicios de abdominales sobre una colchoneta" loading="lazy" width="600" height="400">
+        </div>
+        <div class="world__copy">
+          <span class="world__n" aria-hidden="true">III</span>
+          <h3 class="world__t">Movi<em>miento</em></h3>
+          <p>Clases con profes que te acompañan y un grupo que te espera. Entrená y cuidate en el mismo lugar donde te relajás.</p>
+          <ul class="world__list">
+            <li>Pilates y gimnasia</li>
+            <li>Gimnasio</li>
+          </ul>
+          <a class="link wa" href="https://wa.me/5493624801373" data-msg="¡Hola! Quisiera info sobre pilates, gimnasia y gimnasio." target="_blank" rel="noopener">Consultar horarios de clases <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- INTERLUDIO -->
+  <section class="calm" aria-labelledby="calm-t">
+    <div class="wrap calm__in">
+      <h2 class="calm__word rv" id="calm-t">Calma</h2>
+      <div class="calm__body">
+        <figure class="calm__img rv">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1000&q=70&auto=format&fit=crop" alt="Toalla enrollada, aceite y tulipanes sobre una mesa de spa" loading="lazy" width="1000" height="667">
+        </figure>
+        <div class="calm__copy rv">
+          <p class="eyebrow eyebrow--gold">Nuestro mayor orgullo</p>
+          <p class="calm__lead">La atención: un equipo cálido que te conoce por tu nombre y un ambiente pensado para que te sientas bien desde que entrás.</p>
+          <a class="btn btn--gold wa" href="https://wa.me/5493624801373" data-msg="¡Hola Espacio! Quiero hacer una consulta." target="_blank" rel="noopener">Escribinos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="reviews" id="resenas" aria-labelledby="rev-t">
+    <div class="wrap">
+      <div class="reviews__head rv">
+        <p class="eyebrow eyebrow--gold">Reseñas en Google</p>
+        <h2 class="h2" id="rev-t"><span class="big">4,7</span> <em>sobre 117 opiniones</em></h2>
+      </div>
+      <div class="reviews__grid">
+        <blockquote class="q rv">
+          <span class="q__stars" aria-label="5 estrellas">★★★★★</span>
+          <p>“Excelente. Buen servicio y atención. Logran uno de los desafíos más grandes: después de 21 años, mantienen la excelencia y se superan.”</p>
+          <footer>Julia S.</footer>
+        </blockquote>
+        <blockquote class="q rv">
+          <span class="q__stars" aria-label="5 estrellas">★★★★★</span>
+          <p>“Hago gimnasia con la profe Silvia Serrano, realmente buenísima atención y el clima del lugar hermoso.”</p>
+          <footer>Graciela M.</footer>
+        </blockquote>
+        <blockquote class="q rv">
+          <span class="q__stars" aria-label="5 estrellas">★★★★★</span>
+          <p>“¡Excelente! ¡La mejor atención! ¡Los mejores servicios! En Espacio sos una reina.”</p>
+          <footer>Derna Z.</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISITA -->
+  <section class="visit" id="visita" aria-labelledby="vis-t">
+    <div class="wrap visit__grid">
+      <div class="visit__info rv">
+        <p class="eyebrow">Visitanos</p>
+        <h2 class="h2" id="vis-t">Salta 364, <em>Resistencia</em></h2>
+        <dl class="hours">
+          <div><dt>Lunes a viernes</dt><dd>09:00 – 20:00</dd></div>
+          <div><dt>Sábados</dt><dd>09:00 – 13:00</dd></div>
+          <div><dt>Domingos</dt><dd>Cerrado</dd></div>
+        </dl>
+        <ul class="contact">
+          <li><span>WhatsApp</span><a class="wa" href="https://wa.me/5493624801373" data-msg="¡Hola Espacio! Quiero hacer una consulta." target="_blank" rel="noopener">0362 480-1373</a></li>
+          <li><span>Instagram</span><a href="https://www.instagram.com/espaciosaludyestetica/" target="_blank" rel="noopener">@espaciosaludyestetica</a></li>
+          <li><span>Facebook</span><a href="https://www.facebook.com/espacioestetica.gym/" target="_blank" rel="noopener">espacioestetica.gym</a></li>
+        </ul>
+      </div>
+      <div class="map rv">
+        <iframe title="Mapa de Espacio Salud y Estética, Salta 364, Resistencia" src="https://maps.google.com/maps?q=Espacio%20Salud%20y%20Est%C3%A9tica%2C%20Salta%20364%2C%20Resistencia%2C%20Chaco&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" aria-labelledby="faq-t">
+    <div class="wrap faq__in">
+      <h2 class="h2 rv" id="faq-t">Antes de <em>tu visita</em></h2>
+      <div class="faq__list">
+        <details class="rv"><summary>¿Cómo saco turno?</summary><p>Escribinos por WhatsApp contándonos qué servicio te interesa y te pasamos los horarios disponibles.</p></details>
+        <details class="rv"><summary>¿Qué tecnología usan para depilación definitiva?</summary><p>Trabajamos con láser Soprano ICE. Consultanos por las zonas y la cantidad de sesiones.</p></details>
+        <details class="rv"><summary>¿Tienen promociones?</summary><p>Sí, publicamos promos y tarjetas de regalo en nuestro Instagram. Preguntanos por las vigentes.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap final__in rv">
+      <span class="rule rule--light" aria-hidden="true"></span>
+      <h2 class="final__t">Regalate un rato <em>para vos</em></h2>
+      <p>Escribinos y agendá tu turno de spa, estética o gimnasio hoy mismo.</p>
+      <a class="btn btn--stone wa" href="https://wa.me/5493624801373" data-msg="¡Hola! Quisiera agendar un turno para..." target="_blank" rel="noopener">Agendar por WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <a href="#top" class="logo logo--foot" aria-label="Volver arriba"><span class="logo__m">Espacio</span><span class="logo__s">salud &amp; estética</span></a>
+    <p>Salta 364 · Resistencia, Chaco<br>Lun a vie 09–20 h · Sáb 09–13 h</p>
+    <p class="footer__small">Fotos ilustrativas de Unsplash. Propuesta de diseño preparada por Javier Ruiz Díaz.</p>
+  </div>
+</footer>
+
+<a class="wa-float wa" href="https://wa.me/5493624801373" data-msg="¡Hola Espacio! Quiero hacer una consulta." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4Z"/></svg>
+</a>
+
+<script src="script.js" defer></script>
 </body>
 </html>

@@ -1,34 +1,253 @@
 <!doctype html>
 <html lang="es-AR">
 <head>
-  <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- SEO / OG: el JS los completa desde data.js. Para la web FINAL, copiá acá los textos reales
-     (WhatsApp y Facebook leen estos valores sin ejecutar JS para la vista previa del link). -->
-<title>Negocio | Sitio web</title>
-<meta name="description" content="">
+<meta name="robots" content="noindex, nofollow">
+<title>KINESIC | Kinesiología, pilates y gimnasio terapéutico en Resistencia, Chaco</title>
+<meta name="description" content="Centro de rehabilitación en Av. Alberdi 834, Resistencia. Kinesiología, gimnasio terapéutico, pilates y yoga terapéutico. Horario corrido de 8 a 20 hs.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0ea5e9">
+<meta property="og:title" content="KINESIC | Estás en buenas manos">
+<meta property="og:description" content="Kinesiología, gimnasio terapéutico, pilates y yoga terapéutico en Av. Alberdi 834, Resistencia.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?w=1200&q=70&auto=format&fit=crop">
+<meta name="theme-color" content="#111315">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,800;0,900;1,800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<!-- Datos del negocio. Para probar otro archivo sin renombrar: index.html?data=data-ejemplo-restaurante -->
-<script>
-  (function () {
-    var p = new URLSearchParams(location.search).get("data");
-    var file = (p && /^[a-z0-9_-]+$/i.test(p)) ? p + ".js" : "data.js";
-    document.write('<script src="' + file + '"><\/script>');
-  })();
+<script>document.documentElement.classList.add('js')</script>
+<script src="script.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalClinic","name":"KINESIC","telephone":"+54 362 430-3075","address":{"@type":"PostalAddress","streetAddress":"Av. Alberdi 834","addressLocality":"Resistencia","addressRegion":"Chaco","addressCountry":"AR"},"openingHours":"Mo-Fr 08:00-20:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"153"}}
 </script>
 </head>
 <body>
-  <div id="app"></div>
-  <noscript><p style="padding:24px;font-family:sans-serif">Activá JavaScript para ver este sitio.</p></noscript>
-  <script src="app.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div class="proposal"><span>Propuesta de diseño para KINESIC — preparada por Javier Ruiz Díaz</span></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="#inicio" aria-label="KINESIC, inicio">KINESIC<span aria-hidden="true">.</span></a>
+    <nav id="menu" class="nav" aria-label="Principal">
+      <a href="#servicios"><small>01</small>Servicios</a>
+      <a href="#centro"><small>02</small>El centro</a>
+      <a href="#opiniones"><small>03</small>Opiniones</a>
+      <a href="#contacto"><small>04</small>Contacto</a>
+      <a class="nav-cta" href="https://wa.me/5493624303075?text=Hola!%20Quiero%20pedir%20un%20turno%20en%20KINESIC." target="_blank" rel="noopener">Pedir turno</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú"><span>Menú</span></button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-photo" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1597452485669-2c7bb5fef90d?w=1600&q=70&auto=format&fit=crop" alt="" width="1600" height="1067" fetchpriority="high">
+    </div>
+    <div class="wrap hero-inner">
+      <p class="tag"><span class="live" aria-hidden="true"></span> Centro de rehabilitación kinésica · Resistencia</p>
+      <h1>Estás en buenas <span class="accent">manos.</span></h1>
+      <div class="hero-bottom">
+        <p class="lead">Kinesiología, gimnasio terapéutico, pilates y yoga terapéutico en Av. Alberdi 834. Horario corrido de 8 a 20 hs para que encaje en tu día.</p>
+        <div class="hero-actions">
+          <a class="btn btn-orange" href="https://wa.me/5493624303075?text=Hola!%20Quiero%20pedir%20un%20turno%20en%20KINESIC." target="_blank" rel="noopener">Pedí tu turno por WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-line" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+      <dl class="kpis">
+        <div><dt>Calificación en Google</dt><dd>5.0<span class="unit">★</span></dd></div>
+        <div><dt>Opiniones en Google</dt><dd>153</dd></div>
+        <div><dt>Horario corrido L a V</dt><dd>8–20<span class="unit">hs</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Kinesiología</span><span>Gimnasio terapéutico</span><span>Pilates</span><span>Yoga terapéutico</span><span>Suelo pélvico</span><span>Reeducación postural</span><span>Acupuntura</span><span>Neurorrehabilitación</span>
+      <span>Kinesiología</span><span>Gimnasio terapéutico</span><span>Pilates</span><span>Yoga terapéutico</span><span>Suelo pélvico</span><span>Reeducación postural</span><span>Acupuntura</span><span>Neurorrehabilitación</span>
+    </div>
+  </div>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <div class="sec-top rv">
+        <p class="label">// Servicios</p>
+        <h2>Tu recuperación, <span class="accent">de principio a fin.</span></h2>
+        <p class="sec-lead">Del consultorio al gimnasio: un mismo equipo te acompaña en todo el proceso.</p>
+      </div>
+      <ol class="svc-list">
+        <li class="svc rv">
+          <span class="svc-num">01</span>
+          <h3>Kinesiología</h3>
+          <p>Evaluación y tratamiento de lesiones, dolor y rehabilitación con aparatología de fisioterapia.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="svc rv">
+          <span class="svc-num">02</span>
+          <h3>Gimnasio terapéutico</h3>
+          <p>Ejercicio guiado para recuperar fuerza y volver a tus actividades con seguridad.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="svc rv">
+          <span class="svc-num">03</span>
+          <h3>Pilates</h3>
+          <p>Clases para fortalecer, mejorar la postura y moverte mejor.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="svc rv">
+          <span class="svc-num">04</span>
+          <h3>Yoga terapéutico</h3>
+          <p>Movimiento consciente y respiración adaptados a cada persona.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="svc rv">
+          <span class="svc-num">05</span>
+          <h3>Suelo pélvico</h3>
+          <p>Rehabilitación del suelo pélvico con un enfoque respetuoso y personalizado.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </li>
+        <li class="svc rv">
+          <span class="svc-num">06</span>
+          <h3>Postura, acupuntura y neuro&shy;rrehabilitación</h3>
+          <p>Reeducación postural, acupuntura y rehabilitación neurológica.</p>
+          <span class="svc-arrow" aria-hidden="true">→</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- EL CENTRO -->
+  <section class="center" id="centro">
+    <div class="wrap">
+      <div class="center-head rv">
+        <p class="label">// El centro</p>
+        <h2>Un equipo que te conoce <span class="accent">por tu nombre.</span></h2>
+        <div class="center-text">
+          <p>En KINESIC trabajamos con atención profesional y compromiso: desde la recepción hasta el gimnasio, todo el equipo sigue tu evolución.</p>
+          <p>Consultorios con aparatología de fisioterapia, gimnasio, salas de pilates, patio y terraza, con horario corrido de lunes a viernes.</p>
+        </div>
+      </div>
+      <div class="bento">
+        <figure class="tile t-a duo rv">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1000&q=70&auto=format&fit=crop" alt="Clase de pilates sobre colchonetas" loading="lazy" width="1000" height="667">
+          <figcaption>Salas de pilates</figcaption>
+        </figure>
+        <figure class="tile t-b duo rv">
+          <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=700&q=70&auto=format&fit=crop" alt="Persona haciendo una postura de yoga en el piso" loading="lazy" width="700" height="700">
+          <figcaption>Yoga terapéutico</figcaption>
+        </figure>
+        <figure class="tile t-c duo rv">
+          <img src="https://images.unsplash.com/photo-1620188467120-5042ed1eb5da?w=700&q=70&auto=format&fit=crop" alt="Mancuernas y equipamiento de gimnasio" loading="lazy" width="700" height="700">
+          <figcaption>Gimnasio</figcaption>
+        </figure>
+        <div class="tile t-d stat rv">
+          <span class="stat-num">L–V</span>
+          <span>Horario corrido, de 8 a 20 hs, sin cortar al mediodía.</span>
+        </div>
+        <figure class="tile t-e duo rv">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1000&q=70&auto=format&fit=crop" alt="Mujer elongando sobre una colchoneta" loading="lazy" width="1000" height="667">
+          <figcaption>Movimiento guiado</figcaption>
+        </figure>
+      </div>
+      <ul class="spaces rv" aria-label="Espacios del centro">
+        <li>Recepción</li><li>Consultorios con aparatología</li><li>Gimnasio</li><li>Salas de pilates</li><li>Patio</li><li>Terraza</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OPINIONES -->
+  <section class="reviews" id="opiniones">
+    <div class="wrap">
+      <div class="board rv">
+        <p class="label">// Opiniones en Google</p>
+        <p class="board-score"><span>5.0</span><span class="of">/5</span></p>
+        <p class="board-meta"><span class="stars" aria-hidden="true">★★★★★</span> 153 opiniones</p>
+      </div>
+      <div class="rev-list">
+        <figure class="rev rev-big rv">
+          <blockquote>“Una atención excelente con el paciente, empezando desde la secretaria, la kinesióloga <mark>Magali Paz</mark> y <mark>Azucena</mark>, después en el gimnasio <mark>Franco</mark> con la rehabilitación espectacular. Un lujo todo, totalmente recomendable.”</blockquote>
+          <figcaption><span class="av" aria-hidden="true">N</span>Natali C. <small>★★★★★</small></figcaption>
+        </figure>
+        <figure class="rev rv">
+          <blockquote>“Muy buena atención. Excelentes profesionales. El lugar es muy lindo. Me encanta todo. La parte de los aparatos de fisioterapia, el gimnasio, el patio con césped sintético, la recepción, las habitaciones donde se hace pilates, la terraza.”</blockquote>
+          <figcaption><span class="av" aria-hidden="true">T</span>Tomás H. <small>★★★★★</small></figcaption>
+        </figure>
+        <figure class="rev rv">
+          <blockquote>“Excelente atención y muy buenos profesionales. Estoy muy conforme con el lugar y lo recomiendo muchísimo.”</blockquote>
+          <figcaption><span class="av" aria-hidden="true">J</span>Julieta A. <small>★★★★★</small></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="wrap contact-grid">
+      <div class="panel rv">
+        <p class="label">// Horarios</p>
+        <table class="sched">
+          <caption class="sr-only">Horarios de atención</caption>
+          <tbody>
+            <tr><th scope="row">Lunes a viernes</th><td><strong>08:00 – 20:00</strong><span class="pill">Corrido</span></td></tr>
+            <tr><th scope="row">Sábados y domingos</th><td class="closed">Cerrado</td></tr>
+          </tbody>
+        </table>
+        <p class="label mt">// Dónde</p>
+        <p class="addr">Av. Alberdi 834<br><span>Resistencia, Chaco</span></p>
+        <div class="links">
+          <a href="tel:+543624303075">0362 430-3075</a>
+          <a href="https://instagram.com/centrokinesic" target="_blank" rel="noopener">@centrokinesic</a>
+        </div>
+        <div class="faq">
+          <p class="label mt">// Preguntas</p>
+          <details>
+            <summary>¿Atienden en horario corrido?</summary>
+            <p>Sí, de lunes a viernes de 8 a 20 hs, sin cortar al mediodía.</p>
+          </details>
+          <details>
+            <summary>¿Cómo pido turno?</summary>
+            <p>Escribinos por WhatsApp contándonos tu lesión o lo que querés trabajar y te pasamos los horarios.</p>
+          </details>
+          <details>
+            <summary>¿Dónde están?</summary>
+            <p>En Av. Alberdi 834, Resistencia, Chaco.</p>
+          </details>
+        </div>
+      </div>
+      <div class="map rv">
+        <iframe title="Mapa de KINESIC en Av. Alberdi 834, Resistencia" src="https://maps.google.com/maps?q=KINESIC%2C%20Av.%20Alberdi%20834%2C%20Resistencia%2C%20Chaco&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="wrap cta-inner rv">
+      <h2>Empezá tu recuperación <span>esta semana.</span></h2>
+      <div class="cta-side">
+        <p>Escribinos y coordinamos tu primera sesión.</p>
+        <a class="btn btn-dark" href="https://wa.me/5493624303075?text=Hola!%20Quiero%20pedir%20un%20turno%20en%20KINESIC." target="_blank" rel="noopener">Pedir turno <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-row">
+    <p class="brand">KINESIC<span aria-hidden="true">.</span></p>
+    <p>Centro de rehabilitación kinésica · Av. Alberdi 834, Resistencia</p>
+    <p>© <span id="year">2026</span></p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5493624303075?text=Hola%20KINESIC!%20Quiero%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a KINESIC">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>Turnos</span>
+</a>
 </body>
 </html>

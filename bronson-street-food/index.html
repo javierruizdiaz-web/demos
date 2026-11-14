@@ -1,34 +1,244 @@
 <!doctype html>
 <html lang="es-AR">
 <head>
-  <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- SEO / OG: el JS los completa desde data.js. Para la web FINAL, copiá acá los textos reales
-     (WhatsApp y Facebook leen estos valores sin ejecutar JS para la vista previa del link). -->
-<title>Negocio | Sitio web</title>
-<meta name="description" content="">
-<meta property="og:type" content="website">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0ea5e9">
+<meta name="robots" content="noindex, nofollow">
+<title>Bronson Street Food | Hamburguesas y pizzas en Resistencia, Chaco</title>
+<meta name="description" content="Burgers y pizzas con borde de mozzarella en 2 de Febrero 22, Resistencia. Delivery y take away todas las noches. Pedí por WhatsApp.">
+<meta name="theme-color" content="#121212">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:wght@400;500;600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=1600&q=70&auto=format&fit=crop">
 <link rel="stylesheet" href="styles.css">
-<!-- Datos del negocio. Para probar otro archivo sin renombrar: index.html?data=data-ejemplo-restaurante -->
-<script>
-  (function () {
-    var p = new URLSearchParams(location.search).get("data");
-    var file = (p && /^[a-z0-9_-]+$/i.test(p)) ? p + ".js" : "data.js";
-    document.write('<script src="' + file + '"><\/script>');
-  })();
-</script>
 </head>
 <body>
-  <div id="app"></div>
-  <noscript><p style="padding:24px;font-family:sans-serif">Activá JavaScript para ver este sitio.</p></noscript>
-  <script src="app.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div class="proposal">Propuesta de diseño para Bronson Street Food — preparada por Javier Ruiz Díaz</div>
+
+<header class="top" id="top">
+  <div class="top__in">
+    <a class="logo" href="#top" aria-label="Bronson Street Food, inicio">
+      <span class="logo__b">Bronson</span>
+      <span class="logo__s">street food</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#carta">La carta</a>
+      <a href="#como-pedir">Cómo pedir</a>
+      <a href="#resenas">Reseñas</a>
+      <a href="#horario">Horario</a>
+      <a href="#donde">Dónde</a>
+    </nav>
+    <span class="live" id="live" aria-live="polite">19:30 — 00:30</span>
+    <a class="top__cta" href="https://wa.me/5493624707302?text=%C2%A1Hola%20Bronson%21%20Quiero%20hacer%20un%20pedido%3A%20" target="_blank" rel="noopener">Pedir</a>
+    <button class="burger-btn" id="burgerBtn" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO póster -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__grid">
+      <div class="hero__head">
+        <p class="hero__tag">Burgers &amp; pizzas<span class="hide-sm"> · Resistencia</span></p>
+        <h1 id="hero-title" class="hero__title"><span>Pedí</span><span class="red">directo.</span></h1>
+        <p class="sticker sticker--main" aria-hidden="true"><span>Sin comisión</span><b>de apps</b></p>
+      </div>
+      <div class="hero__copy">
+        <p class="hero__lead">Más rico, sin intermediarios. Burgers jugosas, papas y pizzas con borde de mozzarella: hacé tu pedido por WhatsApp y retiralo o recibilo en tu casa, todas las noches desde las 19:30.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--red" href="https://wa.me/5493624707302?text=%C2%A1Hola%20Bronson%21%20Quiero%20hacer%20un%20pedido%3A%20" target="_blank" rel="noopener">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.5L3 29l6.9-1.8c1.9 1 4 1.6 6.1 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.5c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a10.5 10.5 0 0 1-1.6-5.6C5.3 10 10.1 5.3 16 5.3s10.7 4.7 10.7 10.5S21.9 26.5 16 26.5zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.7 1.2 3.1 1.3 3.3 2.3 3.5 5.6 4.9c2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5s.3-1.3.2-1.5-.3-.2-.6-.4z"/></svg>
+            Pedir por WhatsApp
+          </a>
+          <a class="btn btn--line" href="#carta">Ver la carta</a>
+        </div>
+      </div>
+      <div class="hero__art">
+        <div class="hero__disc" aria-hidden="true"></div>
+        <img class="hero__img" src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=1600&q=70&auto=format&fit=crop" alt="Hamburguesa con panceta, cheddar, lechuga y tomate sobre fondo negro" fetchpriority="high">
+        <p class="sticker sticker--small" aria-hidden="true">Delivery<br>+ take away</p>
+        <p class="sticker sticker--star" aria-hidden="true"><b>4,7★</b><span>427 opiniones</span></p>
+      </div>
+    </div>
+    <p class="sr-only">Sin comisión de apps: pedís directo al local. Delivery y take away. 4,7 estrellas con 427 opiniones en Google.</p>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Burgers</span><i>●</i><span class="o">Pizzas</span><i>●</i><span>Delivery</span><i>●</i><span class="o">Take away</span><i>●</i>
+      <span>Burgers</span><i>●</i><span class="o">Pizzas</span><i>●</i><span>Delivery</span><i>●</i><span class="o">Take away</span><i>●</i>
+      <span>Burgers</span><i>●</i><span class="o">Pizzas</span><i>●</i><span>Delivery</span><i>●</i><span class="o">Take away</span><i>●</i>
+    </div>
+  </div>
+
+  <!-- LA CARTA -->
+  <section class="menu" id="carta" aria-labelledby="carta-title">
+    <div class="wrap">
+      <header class="menu__head">
+        <p class="kicker">La carta</p>
+        <h2 id="carta-title" class="h2">Lo que sale de<br>nuestra cocina</h2>
+        <p class="menu__lead">Pedilo directo: sin apps de por medio, hablás con nosotros.</p>
+      </header>
+
+      <div class="tickets">
+        <article class="ticket ticket--a">
+          <figure><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=900&q=70&auto=format&fit=crop" alt="Cheeseburger con cebolla, tomate y lechuga" loading="lazy"></figure>
+          <div class="ticket__body">
+            <span class="ticket__no">N.º 01</span>
+            <h3>Burgers Bronson</h3>
+            <p>Carne jugosa, pan suave y combinaciones que no fallan. Preguntá por la promo de clásicas.</p>
+          </div>
+        </article>
+        <article class="ticket ticket--b">
+          <figure><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=900&q=70&auto=format&fit=crop" alt="Pizza en porciones sobre tabla de madera" loading="lazy"></figure>
+          <div class="ticket__body">
+            <span class="ticket__no">N.º 02</span>
+            <h3>Pizzas con borde de mozzarella</h3>
+            <p>La otra mitad de Bronson: pizzas con el borde relleno de mozzarella.</p>
+          </div>
+        </article>
+        <article class="ticket ticket--c">
+          <figure><img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=900&q=70&auto=format&fit=crop" alt="Bandeja de papas fritas" loading="lazy"></figure>
+          <div class="ticket__body">
+            <span class="ticket__no">N.º 03</span>
+            <h3>Papas y acompañamientos</h3>
+            <p>Papas, bastoncitos de pollo y mayo de ajo para completar el pedido.</p>
+          </div>
+        </article>
+      </div>
+
+      <a class="promo" href="https://wa.me/5493624707302?text=%C2%A1Hola%20Bronson%21%20Quiero%20consultar%20las%20promos%20vigentes." target="_blank" rel="noopener">
+        <span class="promo__burst" aria-hidden="true">Promos</span>
+        <span class="promo__txt"><strong>Promos fijas para compartir.</strong> Pedinos las vigentes por WhatsApp <span aria-hidden="true">→</span></span>
+      </a>
+      <p class="note">Fotos ilustrativas de stock. La carta completa y los precios se consultan por WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- CÓMO PEDIR -->
+  <section class="steps" id="como-pedir" aria-labelledby="steps-title">
+    <div class="wrap">
+      <h2 id="steps-title" class="h2 h2--cream">Cómo pedir<span class="script">en 3 pasos</span></h2>
+      <ol class="steps__list">
+        <li><span class="steps__n" aria-hidden="true">1</span><div><h3>Escribinos</h3><p>Mandanos por WhatsApp lo que querés: burgers, pizzas, papas o la promo del día.</p></div></li>
+        <li><span class="steps__n" aria-hidden="true">2</span><div><h3>¿Delivery o retirás?</h3><p>Pasanos tu dirección (consultá si llegamos a tu zona) o avisanos que pasás por 2 de Febrero 22.</p></div></li>
+        <li><span class="steps__n" aria-hidden="true">3</span><div><h3>Confirmamos y a comer</h3><p>Te confirmamos el total y la demora, y tu pedido sale de nuestra cocina directo a tu mesa.</p></div></li>
+      </ol>
+      <div class="steps__cta">
+        <a class="btn btn--cream" href="https://wa.me/5493624707302?text=%C2%A1Hola%20Bronson%21%20Quiero%20hacer%20un%20pedido%3A%20" target="_blank" rel="noopener">Empezar mi pedido</a>
+        <a class="btn btn--line" href="https://wa.me/5493624707302?text=%C2%A1Hola%20Bronson%21%20%C2%BFLlegan%20con%20delivery%20a%20mi%20zona%3F" target="_blank" rel="noopener">¿Llegan a mi zona?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" aria-labelledby="about-title">
+    <div class="wrap about__grid">
+      <figure class="about__photo">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=1000&q=70&auto=format&fit=crop" alt="Dos hamburguesas sobre una tabla de madera junto a gaseosas" loading="lazy">
+        <span class="tape" aria-hidden="true"></span>
+      </figure>
+      <div class="about__copy">
+        <p class="kicker">Bronson</p>
+        <h2 id="about-title" class="h2">Street food de verdad, en Resistencia</h2>
+        <p>Burgers y pizzas sin vueltas: porciones generosas, papas que acompañan y el cuidado en cada detalle que destacan nuestros clientes en cada reseña.</p>
+        <p>Pedí directo por WhatsApp: hablás con nosotros, te asesoramos y tu pedido sale de nuestra cocina a tu mesa sin intermediarios.</p>
+        <ul class="badges">
+          <li><b>4,7★</b> 427 opiniones en Google</li>
+          <li><b>+41 mil</b> seguidores en Instagram</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS póster -->
+  <section class="quotes" id="resenas" aria-labelledby="quotes-title">
+    <div class="wrap">
+      <h2 id="quotes-title" class="quotes__title">Lo que dicen<br>en Google <span>4,7★ · 427 opiniones</span></h2>
+      <blockquote class="q q--1">
+        <p class="q__big">La verdad, una de las mejores hamburguesas que probé.</p>
+        <p class="q__small">Fuimos con mi pareja y nos encantó, nos súper llenamos con la promo de las hamburguesas clásicas Bronson.</p>
+        <footer><cite>Alexandro S.</cite> <span aria-label="5 estrellas">★★★★★</span></footer>
+      </blockquote>
+      <blockquote class="q q--2">
+        <p class="q__small">La carne siempre súper rica y jugosa, el pan muy suave (...).</p>
+        <p class="q__big">Se nota la calidad y el cuidado en cada detalle. ¡10/10!</p>
+        <footer><cite>Sikoragiu</cite> <span aria-label="5 estrellas">★★★★★</span></footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="wall" aria-labelledby="wall-title">
+    <div class="wrap">
+      <h2 id="wall-title" class="h2 wall__title">Con hambre<br>se mira mejor</h2>
+    </div>
+    <div class="wall__row">
+      <figure class="pol pol--1"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=600&q=70&auto=format&fit=crop" alt="Hamburguesa doble con cheddar y fiambre" loading="lazy"></figure>
+      <figure class="pol pol--2"><img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&q=70&auto=format&fit=crop" alt="Pizza entera con romero sobre la mesa" loading="lazy"></figure>
+      <figure class="pol pol--3"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&q=70&auto=format&fit=crop" alt="Hamburguesa con queso derretido" loading="lazy"></figure>
+      <figure class="pol pol--4"><img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=600&q=70&auto=format&fit=crop" alt="Papas fritas en bandeja" loading="lazy"></figure>
+    </div>
+    <p class="note note--c">Fotos de stock (Unsplash), no son productos de Bronson.</p>
+  </section>
+
+  <!-- NEÓN -->
+  <section class="neon" id="horario" aria-labelledby="neon-title">
+    <div class="neon__sign">
+      <h2 id="neon-title" class="neon__top">Todos los días</h2>
+      <p class="neon__hours"><span>19:30</span><i aria-hidden="true">a</i><span>00:30</span></p>
+      <p class="neon__status" id="neonStatus">Delivery y take away</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" aria-labelledby="faq-title">
+    <div class="wrap faq__grid">
+      <h2 id="faq-title" class="h2">Preguntas<br>rápidas</h2>
+      <div>
+        <details><summary>¿Cómo hago mi pedido?</summary><p>Escribinos por WhatsApp con lo que querés, tu dirección o si pasás a retirar, y te confirmamos el total y la demora.</p></details>
+        <details><summary>¿Hacen delivery?</summary><p>Sí, hacemos delivery y take away. Consultanos por tu zona.</p></details>
+        <details><summary>¿Qué días abren?</summary><p>Todos los días, de 19:30 a 00:30.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + DÓNDE -->
+  <section class="end" id="donde" aria-labelledby="end-title">
+    <div class="wrap end__grid">
+      <div class="end__copy">
+        <h2 id="end-title" class="end__title">¿Se viene<br>antojo?</h2>
+        <p>Pedí directo por WhatsApp y te lo preparamos al toque.</p>
+        <a class="btn btn--cream btn--big" href="https://wa.me/5493624707302?text=%C2%A1Hola%20Bronson%21%20Quiero%20hacer%20un%20pedido." target="_blank" rel="noopener">Pedir por WhatsApp</a>
+        <dl class="end__data">
+          <div><dt>Retirá en</dt><dd>2 de Febrero 22, Resistencia, Chaco</dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5493624707302?text=%C2%A1Hola%20Bronson%21%20Quiero%20hacer%20un%20pedido." target="_blank" rel="noopener">0362 470-7302</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/bronson.streetfood/" target="_blank" rel="noopener">@bronson.streetfood</a></dd></div>
+        </dl>
+      </div>
+      <div class="end__map">
+        <iframe title="Mapa de Bronson Street Food, 2 de Febrero 22, Resistencia" src="https://maps.google.com/maps?q=Bronson%20Street%20Food%2C%202%20de%20Febrero%2022%2C%20Resistencia%2C%20Chaco&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="foot__logo" aria-hidden="true">Bronson</p>
+    <p>© <span id="y">2026</span> Bronson Street Food · 2 de Febrero 22, Resistencia, Chaco</p>
+    <p class="foot__small">Demo de propuesta. Fotos de stock (Unsplash).</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5493624707302?text=%C2%A1Hola%20Bronson%21%20Quiero%20hacer%20un%20pedido." target="_blank" rel="noopener" aria-label="Pedir a Bronson por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.5L3 29l6.9-1.8c1.9 1 4 1.6 6.1 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.5c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a10.5 10.5 0 0 1-1.6-5.6C5.3 10 10.1 5.3 16 5.3s10.7 4.7 10.7 10.5S21.9 26.5 16 26.5zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.7 1.2 3.1 1.3 3.3 2.3 3.5 5.6 4.9c2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5s.3-1.3.2-1.5-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="script.js" defer></script>
 </body>
 </html>

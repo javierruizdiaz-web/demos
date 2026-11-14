@@ -1,34 +1,264 @@
 <!doctype html>
 <html lang="es-AR">
 <head>
-  <meta name="robots" content="noindex, nofollow">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- SEO / OG: el JS los completa desde data.js. Para la web FINAL, copiá acá los textos reales
-     (WhatsApp y Facebook leen estos valores sin ejecutar JS para la vista previa del link). -->
-<title>Negocio | Sitio web</title>
-<meta name="description" content="">
-<meta property="og:type" content="website">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
-<meta property="og:image" content="">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0ea5e9">
+<meta name="robots" content="noindex, nofollow">
+<title>New Life Gym | Gimnasio en Resistencia, Chaco</title>
+<meta name="description" content="Gimnasio integral en Don Bosco 359, Resistencia: musculación, Bikers Life, GAP, Aerobox, Flow Life y flexibilidad. Abierto de 5 a 22 hs.">
+<meta name="theme-color" content="#0A0A0A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=70&auto=format&fit=crop">
 <link rel="stylesheet" href="styles.css">
-<!-- Datos del negocio. Para probar otro archivo sin renombrar: index.html?data=data-ejemplo-restaurante -->
-<script>
-  (function () {
-    var p = new URLSearchParams(location.search).get("data");
-    var file = (p && /^[a-z0-9_-]+$/i.test(p)) ? p + ".js" : "data.js";
-    document.write('<script src="' + file + '"><\/script>');
-  })();
-</script>
 </head>
 <body>
-  <div id="app"></div>
-  <noscript><p style="padding:24px;font-family:sans-serif">Activá JavaScript para ver este sitio.</p></noscript>
-  <script src="app.js"></script>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div class="proposal">Propuesta de diseño para New Life Gym — preparada por Javier Ruiz Díaz</div>
+
+<header class="nav" id="top">
+  <div class="nav__in">
+    <a href="#top" class="brand" aria-label="New Life Gym, inicio">
+      <span class="brand__mark" aria-hidden="true">NL</span>
+      <span class="brand__name">New Life<span>Gym</span></span>
+    </a>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#actividades">Actividades</a>
+      <a href="#grilla">Grilla</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#resenas">Reseñas</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a class="menu__cta" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20info%20para%20empezar%20a%20entrenar." target="_blank" rel="noopener">Quiero empezar</a>
+    </nav>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__img" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=70&auto=format&fit=crop" alt="" fetchpriority="high">
+    </div>
+    <div class="hero__in">
+      <p class="hero__kicker"><span class="status" id="status">Don Bosco 359 · Resistencia</span></p>
+      <h1 class="hero__title" id="hero-title">
+        <span class="l1">Rompé</span>
+        <span class="l2">tu récord.</span>
+        <span class="l3">Sin excusas<em>.</em></span>
+      </h1>
+      <div class="hero__foot">
+        <p class="hero__lead">Musculación, Bikers Life, GAP, Aerobox, Flow Life y más, de 5 a 22 hs. Más de 35 años acompañando a Resistencia a entrenar.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--y" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20info%20para%20empezar%20a%20entrenar." target="_blank" rel="noopener">Quiero empezar <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="#actividades">Ver actividades</a>
+        </div>
+      </div>
+    </div>
+    <div class="tapes" aria-hidden="true">
+      <div class="tape tape--back"><div class="tape__track">
+        <span>#RompéTuRécord</span><span>05:00 — 22:00</span><span>#RompéTuRécord</span><span>05:00 — 22:00</span><span>#RompéTuRécord</span><span>05:00 — 22:00</span>
+        <span>#RompéTuRécord</span><span>05:00 — 22:00</span><span>#RompéTuRécord</span><span>05:00 — 22:00</span><span>#RompéTuRécord</span><span>05:00 — 22:00</span>
+      </div></div>
+      <div class="tape tape--front"><div class="tape__track">
+        <span>Musculación</span><b>✱</b><span>Bikers Life</span><b>✱</b><span>GAP</span><b>✱</b><span>Aerobox</span><b>✱</b><span>Flow Life</span><b>✱</b><span>Flexibilidad</span><b>✱</b>
+        <span>Musculación</span><b>✱</b><span>Bikers Life</span><b>✱</b><span>GAP</span><b>✱</b><span>Aerobox</span><b>✱</b><span>Flow Life</span><b>✱</b><span>Flexibilidad</span><b>✱</b>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- +35 -->
+  <section class="years" aria-labelledby="years-title">
+    <div class="wrap years__grid">
+      <div class="years__num" aria-hidden="true"><span class="plus">+</span>35</div>
+      <div class="years__copy">
+        <p class="eyebrow">Sobre New Life</p>
+        <h2 id="years-title" class="h2">Más de 35 años<br>cuidando tu bienestar</h2>
+        <p>New Life es un gimnasio integral en Don Bosco 359: fuerza, bici, baile, cardio, café y ducha, todo en un mismo lugar.</p>
+        <p>Equipos modernos, ambiente climatizado y profes que lo dan todo. Abrimos desde las 5 de la mañana para que no haya excusas.</p>
+        <ul class="facts">
+          <li><strong>05:00</strong><span>abrimos de lunes a viernes</span></li>
+          <li><strong>6</strong><span>actividades distintas</span></li>
+          <li><strong>4,7★</strong><span>172 opiniones en Google</span></li>
+        </ul>
+      </div>
+      <figure class="years__img">
+        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=1000&q=70&auto=format&fit=crop" alt="Sala de musculación con máquinas y pesas" loading="lazy" width="1000" height="667">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ACTIVIDADES -->
+  <section class="acts" id="actividades" aria-labelledby="acts-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Actividades</p>
+        <h2 id="acts-title" class="h2 h2--xl">Encontrá tu forma<br>de entrenar</h2>
+        <p class="sec-head__lead">Un gym integral: siempre hay algo que se adapta a cómo te sentís hoy.</p>
+      </div>
+      <ol class="act-list">
+        <li class="act"><span class="act__n">01</span><h3 class="act__t">Musculación y cinta</h3><p class="act__d">Sala completa de lunes a viernes de 5 a 22 hs y sábados de 7 a 14 hs.</p><a class="act__go" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20info%20sobre%20musculaci%C3%B3n." target="_blank" rel="noopener" aria-label="Consultar por Musculación y cinta por WhatsApp">↗</a></li>
+        <li class="act"><span class="act__n">02</span><h3 class="act__t">Bikers Life</h3><p class="act__d">Clases de bici: lunes, miércoles y viernes desde las 7 hs; martes y jueves desde las 13 hs.</p><a class="act__go" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20info%20sobre%20las%20clases%20de%20Bikers%20Life." target="_blank" rel="noopener" aria-label="Consultar por Bikers Life por WhatsApp">↗</a></li>
+        <li class="act"><span class="act__n">03</span><h3 class="act__t">GAP</h3><p class="act__d">Glúteos, abdomen y piernas: lunes, miércoles y viernes 14 y 19 hs; martes y jueves 14 hs.</p><a class="act__go" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20info%20sobre%20las%20clases%20de%20GAP." target="_blank" rel="noopener" aria-label="Consultar por GAP por WhatsApp">↗</a></li>
+        <li class="act"><span class="act__n">04</span><h3 class="act__t">Aerobox</h3><p class="act__d">Cardio con técnica de box. Martes y jueves a las 20 hs.</p><a class="act__go" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20info%20sobre%20las%20clases%20de%20Aerobox." target="_blank" rel="noopener" aria-label="Consultar por Aerobox por WhatsApp">↗</a></li>
+        <li class="act"><span class="act__n">05</span><h3 class="act__t">Flow Life</h3><p class="act__d">Baile y movimiento para quemar energía. Lunes, miércoles y viernes a las 20 hs.</p><a class="act__go" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20info%20sobre%20las%20clases%20de%20Flow%20Life." target="_blank" rel="noopener" aria-label="Consultar por Flow Life por WhatsApp">↗</a></li>
+        <li class="act"><span class="act__n">06</span><h3 class="act__t">Flexibilidad y movilidad</h3><p class="act__d">Clase de 40 minutos los sábados a las 12 hs.</p><a class="act__go" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20info%20sobre%20la%20clase%20de%20flexibilidad%20y%20movilidad." target="_blank" rel="noopener" aria-label="Consultar por Flexibilidad y movilidad por WhatsApp">↗</a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- GRILLA SEMANAL -->
+  <section class="sched" id="grilla" aria-labelledby="sched-title">
+    <div class="wrap">
+      <div class="sched__head">
+        <h2 id="sched-title" class="h2 h2--xl">Grilla<br><span class="outline">semanal</span></h2>
+        <p class="sched__note">Clases grupales de lunes a sábado. La sala de musculación funciona de corrido: lun a vie 05–22 hs, sáb 07–14 hs.</p>
+      </div>
+      <div class="week">
+        <div class="day" data-day="1"><h3>Lun</h3>
+          <p class="slot"><time>07:00</time>Bikers Life</p>
+          <p class="slot slot--y"><time>14:00</time>GAP</p>
+          <p class="slot slot--y"><time>19:00</time>GAP</p>
+          <p class="slot"><time>20:00</time>Flow Life</p>
+        </div>
+        <div class="day" data-day="2"><h3>Mar</h3>
+          <p class="slot"><time>13:00</time>Bikers Life</p>
+          <p class="slot slot--y"><time>14:00</time>GAP</p>
+          <p class="slot slot--o"><time>20:00</time>Aerobox</p>
+        </div>
+        <div class="day" data-day="3"><h3>Mié</h3>
+          <p class="slot"><time>07:00</time>Bikers Life</p>
+          <p class="slot slot--y"><time>14:00</time>GAP</p>
+          <p class="slot slot--y"><time>19:00</time>GAP</p>
+          <p class="slot"><time>20:00</time>Flow Life</p>
+        </div>
+        <div class="day" data-day="4"><h3>Jue</h3>
+          <p class="slot"><time>13:00</time>Bikers Life</p>
+          <p class="slot slot--y"><time>14:00</time>GAP</p>
+          <p class="slot slot--o"><time>20:00</time>Aerobox</p>
+        </div>
+        <div class="day" data-day="5"><h3>Vie</h3>
+          <p class="slot"><time>07:00</time>Bikers Life</p>
+          <p class="slot slot--y"><time>14:00</time>GAP</p>
+          <p class="slot slot--y"><time>19:00</time>GAP</p>
+          <p class="slot"><time>20:00</time>Flow Life</p>
+        </div>
+        <div class="day" data-day="6"><h3>Sáb</h3>
+          <p class="slot slot--o"><time>12:00</time>Flexibilidad <small>40 min</small></p>
+        </div>
+      </div>
+      <p class="sched__legal">Grilla publicada por New Life en Instagram. Bikers Life: horario de inicio. Confirmá cupos por WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="gal" aria-labelledby="gal-title">
+    <h2 id="gal-title" class="sr-only">Viví el ambiente New Life</h2>
+    <div class="gal__grid">
+      <figure class="g g1"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=900&q=70&auto=format&fit=crop" alt="Hombre entrenando con barra en el gimnasio" loading="lazy"></figure>
+      <figure class="g g2"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600&q=70&auto=format&fit=crop" alt="Entrenamiento de fuerza con mancuernas" loading="lazy"></figure>
+      <div class="g g-word" aria-hidden="true"><span>Viví<br>el ambiente<br>New Life</span></div>
+      <figure class="g g3"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=70&auto=format&fit=crop" alt="Mujer entrenando en el gimnasio" loading="lazy"></figure>
+      <figure class="g g4"><img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=600&q=70&auto=format&fit=crop" alt="Persona haciendo ejercicio con cuerdas" loading="lazy"></figure>
+      <figure class="g g5"><img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&q=70&auto=format&fit=crop" alt="Entrenamiento con mancuernas frente al espejo" loading="lazy"></figure>
+    </div>
+    <p class="gal__note">Fotos ilustrativas de stock.</p>
+  </section>
+
+  <!-- HORARIOS -->
+  <section class="hours" id="horarios" aria-labelledby="hours-title">
+    <div class="wrap hours__grid">
+      <div>
+        <p class="eyebrow">Horarios</p>
+        <h2 id="hours-title" class="h2 h2--xl">No pain.<br><span class="y">No excuses.</span></h2>
+        <p class="hours__lead">Abrimos a las 5 de la mañana: entrená antes del laburo, en el mediodía o a la noche.</p>
+      </div>
+      <ul class="hours__list">
+        <li data-days="1,2,3,4,5"><span class="hl__d">Lunes a viernes</span><span class="hl__h">05:00 — 22:00</span></li>
+        <li data-days="6"><span class="hl__d">Sábados</span><span class="hl__h">07:00 — 14:00</span></li>
+        <li data-days="0" class="is-closed"><span class="hl__d">Domingos</span><span class="hl__h">Cerrado</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="revs" id="resenas" aria-labelledby="revs-title">
+    <div class="wrap">
+      <div class="revs__head">
+        <h2 id="revs-title" class="h2 h2--xl">Lo dicen<br>los que entrenan</h2>
+        <div class="score" aria-label="4,7 de 5 estrellas con 172 opiniones en Google">
+          <span class="score__n">4,7</span>
+          <span class="score__s"><span class="stars" aria-hidden="true">★★★★★</span>172 opiniones<br>en Google</span>
+        </div>
+      </div>
+      <div class="revs__grid">
+        <blockquote class="rev rev--big"><p>“Equipos modernos, personal capacitado y muy atento en un ambiente súper agradable. ¡Lo recomiendo totalmente!”</p><footer>Sandra C. <span aria-label="5 estrellas">★★★★★</span></footer></blockquote>
+        <blockquote class="rev"><p>“Gym muy completo, con máquinas nuevas, ambiente agradable, climatizado y unos profes que lo dan todo.”</p><footer>Alejandra V. <span aria-label="5 estrellas">★★★★★</span></footer></blockquote>
+        <blockquote class="rev"><p>“Muy buen lugar para entrenar 💪”</p><footer>José A. <span aria-label="5 estrellas">★★★★★</span></footer></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" aria-labelledby="faq-title">
+    <div class="wrap faq__grid">
+      <h2 id="faq-title" class="h2 h2--xl">Antes de<br>arrancar</h2>
+      <div class="faq__list">
+        <details><summary>¿Necesito experiencia para empezar?</summary><p>No. Los profes te acompañan desde el primer día y adaptan el entrenamiento a tu nivel.</p></details>
+        <details><summary>¿Las clases están incluidas?</summary><p>Escribinos por WhatsApp y te contamos los planes y qué actividades incluye cada uno.</p></details>
+        <details><summary>¿A qué hora abren?</summary><p>De lunes a viernes desde las 5 de la mañana hasta las 22 hs, y los sábados de 7 a 14 hs.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final" aria-labelledby="final-title">
+    <div class="wrap final__in">
+      <h2 id="final-title" class="final__t">Tu primer<br>entrenamiento<br>empieza hoy</h2>
+      <div class="final__side">
+        <p>Escribinos y te pasamos planes, horarios y todo para arrancar.</p>
+        <a class="btn btn--k" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20info%20para%20empezar%20a%20entrenar." target="_blank" rel="noopener">Escribir por WhatsApp <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN -->
+  <section class="loc" id="ubicacion" aria-labelledby="loc-title">
+    <div class="wrap loc__grid">
+      <div class="loc__info">
+        <p class="eyebrow">Ubicación</p>
+        <h2 id="loc-title" class="h2 h2--xl">Don Bosco<br>359</h2>
+        <p class="loc__city">Resistencia, Chaco</p>
+        <ul class="loc__links">
+          <li><a href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20hacer%20una%20consulta." target="_blank" rel="noopener"><span>WhatsApp</span>362 522-7446</a></li>
+          <li><a href="tel:+543624434650"><span>Teléfono</span>0362 443-4650</a></li>
+          <li><a href="https://www.instagram.com/newlifegymresistencia/" target="_blank" rel="noopener"><span>Instagram</span>@newlifegymresistencia</a></li>
+          <li><a href="https://www.facebook.com/NewLifeGymResistencia/" target="_blank" rel="noopener"><span>Facebook</span>NewLifeGymResistencia</a></li>
+        </ul>
+      </div>
+      <div class="loc__map">
+        <iframe title="Mapa de New Life Gym, Don Bosco 359, Resistencia" src="https://maps.google.com/maps?q=New%20Life%20Gym%2C%20Don%20Bosco%20359%2C%20Resistencia%2C%20Chaco&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <p class="foot__big" aria-hidden="true">#RompéTuRécord</p>
+    <p>© <span id="y">2026</span> New Life Gym · Don Bosco 359, Resistencia, Chaco</p>
+    <p class="foot__small">Demo de propuesta. Fotos de stock (Unsplash), no son del gimnasio.</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5493625227446?text=%C2%A1Hola%20New%20Life%21%20Quiero%20hacer%20una%20consulta." target="_blank" rel="noopener" aria-label="Escribir a New Life Gym por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.3.6 4.5 1.8 6.5L3 29l6.9-1.8c1.9 1 4 1.6 6.1 1.6 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.5c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a10.5 10.5 0 0 1-1.6-5.6C5.3 10 10.1 5.3 16 5.3s10.7 4.7 10.7 10.5S21.9 26.5 16 26.5zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.7c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.7 1.2 3.1 1.3 3.3 2.3 3.5 5.6 4.9c2.1.9 2.9 1 4 .8.6-.1 1.9-.8 2.2-1.5s.3-1.3.2-1.5-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script src="script.js" defer></script>
 </body>
 </html>
