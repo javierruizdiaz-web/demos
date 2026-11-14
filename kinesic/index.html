@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO / OG: el JS los completa desde data.js. Para la web FINAL, copiá acá los textos reales
+     (WhatsApp y Facebook leen estos valores sin ejecutar JS para la vista previa del link). -->
+<title>Negocio | Sitio web</title>
+<meta name="description" content="">
+<meta property="og:type" content="website">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<meta property="og:image" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0ea5e9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<!-- Datos del negocio. Para probar otro archivo sin renombrar: index.html?data=data-ejemplo-restaurante -->
+<script>
+  (function () {
+    var p = new URLSearchParams(location.search).get("data");
+    var file = (p && /^[a-z0-9_-]+$/i.test(p)) ? p + ".js" : "data.js";
+    document.write('<script src="' + file + '"><\/script>');
+  })();
+</script>
+</head>
+<body>
+  <div id="app"></div>
+  <noscript><p style="padding:24px;font-family:sans-serif">Activá JavaScript para ver este sitio.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>
