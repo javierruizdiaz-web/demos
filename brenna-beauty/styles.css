@@ -200,6 +200,9 @@ em { font-style: italic; }
 .final p { color: #fff; font-size: 18px; margin-bottom: 30px; }
 .final__petal { width: 40px; fill: #F6EEE9; margin: 0 auto 22px; opacity: .9; }
 .final .btn--cream { color: var(--deep); }
+.final__ctas { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.btn--ghost { border: 1px solid rgba(255,255,255,.75); color: #fff; }
+.btn--ghost:hover { background: #fff; color: var(--deep); }
 
 /* Footer */
 .footer { background: var(--deep); color: #C9DAD7; padding: 48px 0 110px; font-size: 15px; }
